@@ -42,7 +42,7 @@ router.get( "/home",
     (req, res) => {
 
         res.writeHead(200);
-        var data = fs.readFileSync("./view/home.html");
+        var data = fs.readFileSync("./HTMLfile/home.html");
         res.end(data.toString());
 });
 
@@ -59,7 +59,7 @@ router.get( "/products",
     (req, res) => {
 
                 res.writeHead(200);
-                var data = fs.readFileSync("./view/products.html");
+                var data = fs.readFileSync("./HTMLfile/products.html");
                 res.end(data.toString());
 
 });
